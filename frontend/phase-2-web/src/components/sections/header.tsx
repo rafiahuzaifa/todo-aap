@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 export function SaasHeader() {
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 border-b border-blue-200 bg-white/95 backdrop-blur-sm">
       <div className="mx-auto max-w-6xl px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
@@ -18,7 +18,7 @@ export function SaasHeader() {
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600">
                 <span className="text-sm font-bold text-white">✓</span>
               </div>
-              <span className="font-semibold text-slate-900">Evolution</span>
+              <span className="font-semibold text-slate-900 font-poppins">Evolution</span>
             </Link>
           </motion.div>
 
@@ -29,13 +29,13 @@ export function SaasHeader() {
             transition={{ duration: 0.4, delay: 0.1 }}
             className="hidden gap-8 sm:flex"
           >
-            <Link href="/" className="text-sm text-slate-600 transition-colors hover:text-slate-900">
+            <Link href="/" className="text-sm text-slate-600 transition-colors hover:text-blue-600 font-poppins">
               Home
             </Link>
-            <Link href="/dashboard" className="text-sm text-slate-600 transition-colors hover:text-slate-900">
+            <Link href="/dashboard" className="text-sm text-slate-600 transition-colors hover:text-blue-600 font-poppins">
               Dashboard
             </Link>
-            <a href="#features" className="text-sm text-slate-600 transition-colors hover:text-slate-900">
+            <a href="#features" className="text-sm text-slate-600 transition-colors hover:text-blue-600 font-poppins">
               Features
             </a>
           </motion.nav>
@@ -49,13 +49,13 @@ export function SaasHeader() {
           >
             <Link
               href="/login"
-              className="rounded-lg px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:text-slate-900"
+              className="rounded-lg px-4 py-2 text-sm font-medium text-slate-600 transition-colors hover:text-blue-600 font-poppins"
             >
               Sign In
             </Link>
             <Link
               href="/register"
-              className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-700"
+              className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-700 font-poppins"
             >
               Get Started
             </Link>

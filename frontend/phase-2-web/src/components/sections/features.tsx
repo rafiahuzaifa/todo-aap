@@ -34,10 +34,10 @@ export function FeatureRow({
       {/* Content */}
       <div className="flex flex-1 flex-col justify-center">
         <Icon className="mb-4 h-8 w-8 text-blue-600" />
-        <h3 className="mb-4 text-3xl font-semibold text-slate-900">
+        <h3 className="mb-4 text-3xl font-bold text-slate-900 font-poppins">
           {title}
         </h3>
-        <p className="mb-8 text-lg text-slate-600">
+        <p className="mb-8 text-lg text-slate-600 font-poppins">
           {description}
         </p>
 

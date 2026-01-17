@@ -1,35 +1,35 @@
 // Design System - Color Tokens
 export const colors = {
-  // Neutrals
+  // Neutrals (White/Gray)
   gray: {
-    50: '#fafafa',
-    100: '#f5f5f5',
-    200: '#ebebeb',
-    300: '#d0d0d0',
-    400: '#a8a8a8',
-    500: '#787878',
-    600: '#525252',
-    700: '#3d3d3d',
-    800: '#292929',
-    900: '#171717',
+    50: '#ffffff',
+    100: '#f8f9fa',
+    200: '#f0f2f5',
+    300: '#e5e7eb',
+    400: '#d1d5db',
+    500: '#9ca3af',
+    600: '#6b7280',
+    700: '#4b5563',
+    800: '#2d3748',
+    900: '#1a202c',
   },
   
-  // Brand - Blue
+  // Brand - Blue (Primary)
   blue: {
-    50: '#f0f9ff',
-    100: '#e0f2fe',
-    200: '#bae6fd',
-    500: '#0ea5e9',
-    600: '#0284c7',
-    700: '#0369a1',
-    800: '#075985',
+    50: '#eff6ff',
+    100: '#dbeafe',
+    200: '#bfdbfe',
+    500: '#3b82f6',
+    600: '#2563eb',
+    700: '#1d4ed8',
+    800: '#1e40af',
   },
   
-  // Accent - Teal
-  teal: {
-    50: '#f0fdfa',
-    500: '#14b8a6',
-    600: '#0d9488',
+  // Accent - Light Blue
+  lightBlue: {
+    50: '#f0f9ff',
+    500: '#06b6d4',
+    600: '#0891b2',
   },
   
   // Semantic
@@ -55,7 +55,7 @@ export const spacing = {
 export const typography = {
   h1: {
     size: '2.25rem', // 36px
-    weight: 600,
+    weight: 700,
     lineHeight: 1.2,
   },
   h2: {

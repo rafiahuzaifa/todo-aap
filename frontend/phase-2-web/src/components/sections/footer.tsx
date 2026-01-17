@@ -31,7 +31,7 @@ export function SaasFooter({
   ]
 
   return (
-    <footer className="border-t border-slate-200 bg-white">
+    <footer className="border-t border-blue-200 bg-white">
       <div className="mx-auto max-w-6xl px-4 py-16 sm:py-24">
         {/* Main Grid */}
         <div className="mb-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -42,10 +42,10 @@ export function SaasFooter({
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <h3 className="mb-4 text-lg font-semibold text-slate-900">
+            <h3 className="mb-4 text-lg font-semibold text-slate-900 font-poppins">
               Evolution
             </h3>
-            <p className="text-sm text-slate-600">
+            <p className="text-sm text-slate-600 font-poppins">
               Professional task management for modern teams.
             </p>
           </motion.div>
