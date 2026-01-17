@@ -8,7 +8,7 @@ export const useSearch = () => {
   const [suggestions, setSuggestions] = useState<string[]>([])
   const [loading, setLoading] = useState(false)
 
-  const search = async (query: string, filters?: any) => {
+  const search = async (query: string) => {
     if (!query.trim()) {
       setResults([])
       return

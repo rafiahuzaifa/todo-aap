@@ -1,14 +1,12 @@
 class WebSocketClient {
   private ws: WebSocket | null = null
   private url: string
-  private token: string
   private listeners: Map<string, Function[]> = new Map()
   private reconnectAttempts = 0
   private maxReconnectAttempts = 5
   private reconnectDelay = 3000
 
   constructor(token: string) {
-    this.token = token
     this.url = `${process.env.NEXT_PUBLIC_API_URL?.replace('http', 'ws')}/ws/connect/${token}`
   }
 

@@ -36,7 +36,7 @@ export const useRealtimeTaskUpdates = () => {
   const subscribeToTaskUpdates = (callback: Function) => {
     if (!ws) return
 
-    ws.on('task_update', (data) => {
+    ws.on('task_update', (data: any) => {
       callback(data)
     })
 
@@ -48,7 +48,7 @@ export const useRealtimeTaskUpdates = () => {
   const subscribeToNotifications = (callback: Function) => {
     if (!ws) return
 
-    ws.on('notification', (data) => {
+    ws.on('notification', (data: any) => {
       callback(data)
     })
 
