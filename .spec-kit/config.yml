@@ -1,0 +1,64 @@
+# Spec-Kit Plus Configuration
+# For Evolution of Todo Project
+
+project:
+  name: Evolution of Todo
+  version: 1.0.0
+  description: Multi-phase Todo application built with Spec-Driven Development
+
+specification:
+  root_dir: ../specs
+  naming_convention: kebab-case
+  validation: strict
+
+code_generation:
+  enabled: true
+  output_dirs:
+    backend: ../backend
+    frontend: ../frontend
+    shared: ../shared
+  
+generation_rules:
+  - language: typescript
+    patterns:
+      - "backend/**/*.spec.yml"
+      - "shared/**/*.spec.yml"
+  - language: typescript/react
+    patterns:
+      - "frontend/**/*.spec.yml"
+
+documentation:
+  auto_update: true
+  output_dir: ../docs
+  include_examples: true
+
+version_control:
+  track_changes: true
+  history_file: ../docs/IMPLEMENTATION_HISTORY.md
+  auto_commit: false
+
+phases:
+  - phase: 1
+    name: Console
+    status: planned
+    specs_dir: specs/phase-1-console
+    
+  - phase: 2
+    name: Web
+    status: planned
+    specs_dir: specs/phase-2-web
+    
+  - phase: 3
+    name: Chatbot
+    status: planned
+    specs_dir: specs/phase-3-chatbot
+    
+  - phase: 4
+    name: Local Kubernetes
+    status: planned
+    specs_dir: specs/phase-4-kubernetes
+    
+  - phase: 5
+    name: Cloud
+    status: planned
+    specs_dir: specs/phase-5-cloud
