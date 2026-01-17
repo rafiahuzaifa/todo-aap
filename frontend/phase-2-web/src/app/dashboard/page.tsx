@@ -7,7 +7,6 @@ import { Footer } from '@/components/layout/footer'
 import { TaskForm } from '@/components/forms/task-form'
 import { TaskCard } from '@/components/cards/task-card'
 import { useAuthStore } from '@/lib/store'
-import { TableSkeleton } from '@/components/ui/skeleton'
 
 interface Task {
   id: string | number
