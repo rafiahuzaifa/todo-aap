@@ -4,12 +4,12 @@ import { useAuth } from '@/hooks'
 import { useState } from 'react'
 import Link from 'next/link'
 
-export default function LoginForm() {
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
+export default function LoginForm(): JSX.Element {
+  const [email, setEmail] = useState<string>('')
+  const [password, setPassword] = useState<string>('')
   const { login, loading, error } = useAuth()
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>): Promise<void> => {
     e.preventDefault()
     try {
       await login(email, password)
@@ -51,7 +51,7 @@ export default function LoginForm() {
               <input
                 type="email"
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
                 placeholder="your@email.com"
                 className="input-luxury w-full px-4 py-3 border rounded-lg"
                 required
@@ -64,7 +64,7 @@ export default function LoginForm() {
               <input
                 type="password"
                 value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}
                 placeholder="••••••••"
                 className="input-luxury w-full px-4 py-3 border rounded-lg"
                 required
